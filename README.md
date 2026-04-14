@@ -89,14 +89,20 @@ docker pull jeko777/frontend
 ## 📁 Project Structure
 
 ```
-Task-1/Goals/
-├── client/                  # React frontend (SoftUni base codebase)
-│   ├── src/
-│   ├── public/
+/
+├── backend/                 # React backend (SoftUni base codebase) 
+│   ├── logs/
+│   ├── models/
+|   └── app.js
+|   └── Dockerfile
 │   └── package.json
-├── Dockerfile               # Container build instructions
+├── frontend/                # React frontend (SoftUni base codebase)
+│   ├── public/
+│   ├── src/
+│   └── Dockerfile
+|   └── package-lock.json
+|   └── package.json        
 ├── docker-compose.yml       # Multi-container orchestration config
-├── .dockerignore            # Excludes unnecessary files from image build
 └── README.md
 ```
 
@@ -107,7 +113,7 @@ Task-1/Goals/
 - **Image Building** — Creating optimized Docker images from a `Dockerfile`
 - **Container Lifecycle** — Running, stopping, and removing containers via the Docker CLI
 - **Port Mapping** — Exposing container ports to the host machine
-- **Volume Mounting** *(if applicable)* — Persisting or sharing data between host and container
+- **Volume Mounting** — Persisting or sharing data between host and container
 - **Registry Workflow** — Tagging and pushing images to Docker Hub
 - **Service Orchestration** — Coordinating multiple services with Docker Compose
 
@@ -126,4 +132,4 @@ This project is intended for educational and portfolio purposes.
 
 ---
 
-<p align="center">Made with 💙 and a lot of <code>docker build</code> commands</p>
+<p align="center">Made with 💙 and a lot of <code>docker</code> commands</p>
